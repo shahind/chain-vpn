@@ -401,7 +401,11 @@ for range in $(jq .[] iran_ip_range.json | sed 's/"//g' | xargs); do
   ip route add $range via 1.0.0.1;
 done;
 ```
-## 2-22 Connect to the server B
+## 2-22 Install the openconnect client
+```
+yum install openconnect
+```
+## 2-23 Connect to the server B
 ```
 openconnect 2.0.0.0
 ```
