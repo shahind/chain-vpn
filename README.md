@@ -418,6 +418,6 @@ Everything must be fine at this level, your clients will reach Iranian websites 
 ## 3-1 Only Irannian websites are accessible
 Make sure your connection to server B from server A using `openconnect` is stablished. If you are using a ssh connection for reaching the server A, please keep it in mind that after closing your ssh connection the openconnect will become terminated as well. Please refer to section 2-23 for tips on how to keep `openconnect` connected.
 ## 3-2 Routings are missed
-After a reboot, all routings we did in steps 2-19 to 2-21 may be reset. First check them by running ``ip route``, you must see a massive list of routings, if there are few default routings, you may need to re-do the steps 2-19 to 2-21 again and then connect to server B.
+After a reboot, all routings we did in steps 2-19 to 2-21 may be reset. First check them by running ``ip route``, you must see a long list of routings, if there are few default routings, you may need to re-do the steps 2-19 to 2-21 again and then connect to server B.
 ## 3-3 The phone is connected but the PC can not connect (or vice versa)
 The `ocserv` has a limit on maximum same clients. You may need to increase the number of simulatnious connection for a username by setting `max-same-clients` in `\etc\ocserv\ocserv.conf`. Please remeber to check the `max-clients` as well.
