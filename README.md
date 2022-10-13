@@ -410,5 +410,5 @@ yum install openconnect
 openconnect 2.0.0.0
 ```
 Enter the username and password which you created in step 1-16.
-## 2-23 Done!
+## 2-24 Done!
 Everything must be fine at this level, your clients will reach Iranian websites through server A and foreign websites using server B. You need only one VPN user on server B and you must create VPN users server A as much as you need. Using a similar method you can chain also the server B to another server like C.
