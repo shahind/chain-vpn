@@ -401,6 +401,7 @@ for range in $(jq .[] iran_ip_range.json | sed 's/"//g' | xargs); do
   ip route add $range via 1.0.0.1;
 done;
 ```
+For other countries, please refer to [this repository](https://github.com/shahind/iran_ip_ranges)
 ## 2-22 Install the openconnect client
 ```
 yum install openconnect
