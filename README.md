@@ -412,7 +412,7 @@ openconnect 2.0.0.0
 ```
 Enter the username and password which you created in step 1-16. If you are using a ssh connection I suggest running in detached mode or using `tmux` as it keeps running even after you close your ssh connection to the server A. You can also wirte a simple code or use cronjob (`crontab` for example) to make sure that connection to the server B remains stable.
 ## 2-24 Done!
-Everything must be fine at this level, your clients will reach Iranian websites through server A and foreign websites using server B. You need only one VPN user on server B and you must create VPN users server A as much as you need. Using a similar method you can chain also the server B to another server like C.
+Everything must be fine at this level, your clients will reach Iranian websites through server A and foreign websites using server B. You need only one VPN user on server B and you must create VPN users server on A as much as you need. Using a similar method you can chain also the server B to another server like C.
 
 # 3 Troubleshouting
 ## 3-1 Only Irannian websites are accessible
