@@ -414,7 +414,7 @@ Enter the username and password which you created in step 1-16. If you are using
 ## 2-24 Done!
 Everything must be fine at this level, your clients will reach Iranian websites through server A and foreign websites using server B. You need only one VPN user on server B and you must create VPN users server on A as much as you need. Using a similar method you can chain also the server B to another server like C.
 
-# 3 Troubleshouting
+# 3 Troubleshooting
 ## 3-1 Only Irannian websites are accessible
 Make sure your connection to server B from server A using `openconnect` is stablished. If you are using a ssh connection for reaching the server A, please keep it in mind that after closing your ssh connection the openconnect will become terminated as well. Please refer to section 2-23 for tips on how to keep `openconnect` connected.
 ## 3-2 Routings are missed
