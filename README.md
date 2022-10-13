@@ -415,8 +415,9 @@ Enter the username and password which you created in step 1-16. If you are using
 Everything must be fine at this level, your clients will reach Iranian websites through server A and foreign websites using server B. You need only one VPN user on server B and you must create VPN users server A as much as you need. Using a similar method you can chain also the server B to another server like C.
 
 # 3 Troubleshouting
-## 3-2 Only Irannian websites are accessible
+## 3-1 Only Irannian websites are accessible
 Make sure your connection to server B from server A using `openconnect` is stablished. If you are using a ssh connection for reaching the server A, please keep it in mind that after closing your ssh connection the openconnect will become terminated as well. Please refer to section 2-23 for tips on how to keep `openconnect` connected.
-## 3-1 Routings are missed
-After a reboot, all routings we did in steps 2-19 to 2-21 may be reset. First check them by running ``ip route``, you must see a massive list of routings, if there are few default routings, you may need to re-do the steps 2-19 to 2-21 again and then conect to server B.
-
+## 3-2 Routings are missed
+After a reboot, all routings we did in steps 2-19 to 2-21 may be reset. First check them by running ``ip route``, you must see a massive list of routings, if there are few default routings, you may need to re-do the steps 2-19 to 2-21 again and then connect to server B.
+## 3-3 The phone is connected but the PC can not connect (or vice versa)
+The `ocserv` has a limit on maximum same clients. You may need to increase the number of simulatnious connection for a username by setting `max-same-clients` in `\etc\ocserv\ocserv.conf`. Please remeber to check the `max-clients` as well.
