@@ -150,7 +150,7 @@ csf -v
 ```
 ## 1-13 Config firewall and routing
 ```
-nano \etc\csf\csfpre.sh
+nano /etc/csf/csfpre.sh
 ```
 Write the following commands:
 ```
